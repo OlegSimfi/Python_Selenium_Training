@@ -23,7 +23,7 @@ class Application:
 
     def open_groups_page(self):
         wd = self.wd
-        wd.find_element_by_link_text("groups").click()
+        wd.find_element_by_link_text("GROUPS").click()
 
     def create_group(self, group):
         wd = self.wd
@@ -50,7 +50,7 @@ class Application:
 
     def logout(self):
         wd = self.wd
-        wd.find_element_by_link_text("Logout").click()
+        wd.find_element_by_link_text("LOGOUT").click()
 
     def destroy(self):
         self.wd.quit()
