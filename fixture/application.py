@@ -11,6 +11,7 @@ class Application:
             self.wd = webdriver.Ie()
         else:
             self.wd = webdriver.Chrome()
+            self.wd.set_window_size(1920, 1080)
         self.wd.implicitly_wait(5)
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
